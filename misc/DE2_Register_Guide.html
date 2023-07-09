@@ -1,0 +1,1103 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>DE2 Register Guide - linux-sunxi.org</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"43eb13e77ae493f5f5104e85","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"DE2_Register_Guide","wgTitle":"DE2 Register Guide","wgCurRevisionId":20910,"wgRevisionId":20910,"wgArticleId":3123,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["H3 Register guide"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"DE2_Register_Guide","wgRelevantArticleId":3123,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":
+"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","mediawiki.toc.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=mediawiki.toc.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.8"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="linux-sunxi.org (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://linux-sunxi.org/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="linux-sunxi.org Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://linux-sunxi.org/DE2_Register_Guide"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-DE2_Register_Guide rootpage-DE2_Register_Guide skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">DE2 Register Guide</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From linux-sunxi.org</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#DE2_register_guide"><span class="tocnumber">1</span> <span class="toctext">DE2 register guide</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Overview"><span class="tocnumber">1.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Notes"><span class="tocnumber">1.2</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Documentation"><span class="tocnumber">1.3</span> <span class="toctext">Documentation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Sections"><span class="tocnumber">1.4</span> <span class="toctext">Sections</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#CCU"><span class="tocnumber">1.5</span> <span class="toctext">CCU</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#DE2_CCU_GATE"><span class="tocnumber">1.5.1</span> <span class="toctext">DE2_CCU_GATE</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#DE2_CCU_BUS_GATE"><span class="tocnumber">1.5.2</span> <span class="toctext">DE2_CCU_BUS_GATE</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#DE2_CCU_RST"><span class="tocnumber">1.5.3</span> <span class="toctext">DE2_CCU_RST</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#DE2_CCU_DIV"><span class="tocnumber">1.5.4</span> <span class="toctext">DE2_CCU_DIV</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#DE2_CCU_SEL"><span class="tocnumber">1.5.5</span> <span class="toctext">DE2_CCU_SEL</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Mixer"><span class="tocnumber">1.6</span> <span class="toctext">Mixer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Global_Configuration"><span class="tocnumber">1.6.1</span> <span class="toctext">Global Configuration</span></a>
+<ul>
+<li class="toclevel-4 tocsection-14"><a href="#GLB_CTL_REG"><span class="tocnumber">1.6.1.1</span> <span class="toctext">GLB_CTL_REG</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="#GLB_STATUS_REG"><span class="tocnumber">1.6.1.2</span> <span class="toctext">GLB_STATUS_REG</span></a></li>
+<li class="toclevel-4 tocsection-16"><a href="#GLB_DBUFF_REG"><span class="tocnumber">1.6.1.3</span> <span class="toctext">GLB_DBUFF_REG</span></a></li>
+<li class="toclevel-4 tocsection-17"><a href="#GLB_SIZE_REG"><span class="tocnumber">1.6.1.4</span> <span class="toctext">GLB_SIZE_REG</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-18"><a href="#Blender"><span class="tocnumber">1.6.2</span> <span class="toctext">Blender</span></a>
+<ul>
+<li class="toclevel-4 tocsection-19"><a href="#BLD_PIPE_CTL"><span class="tocnumber">1.6.2.1</span> <span class="toctext">BLD_PIPE_CTL</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="DE2_register_guide">DE2 register guide</span></h1>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Although DE2 is listed as a single block in the datasheet, it in fact contains several sub-blocks.
+</p>
+<h2><span class="mw-headline" id="Notes">Notes</span></h2>
+<p>On A64 the BIT(24) at 0x01c00004 should be cleared to make DE2 to work.
+</p>
+<h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
+<p><a href="./Allwinner_DE2.0_Spec_V1.0.pdf" title="File:Allwinner DE2.0 Spec V1.0.pdf">File:Allwinner DE2.0 Spec V1.0.pdf</a> - 147 pages, 2.9MB, 18-01-2018
+</p>
+<h2><span class="mw-headline" id="Sections">Sections</span></h2>
+<p>Most SoCs position DE2 at 0x01000000 (A64/H3/H5), but it may also be on a different address.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Section
+</th>
+<th>Subsection
+</th>
+<th>Offset
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td><b>CCU</b>
+</td>
+<td>CCU
+</td>
+<td><tt>0x00000000</tt>
+</td>
+<td>DE2 Clock Controller
+</td></tr>
+<tr>
+<td><b>WB</b>
+</td>
+<td>WB
+</td>
+<td><tt>0x00010000</tt>
+</td>
+<td>Write Back Controller
+</td></tr>
+<tr>
+<td><b>Transform</b>
+</td>
+<td>Transform
+</td>
+<td><tt>0x00020000</tt>
+</td>
+<td>Rotate arbitrary framebuffers
+</td></tr>
+<tr>
+<td><b>Mixer</b>
+</td>
+<td>Mixer0
+</td>
+<td><tt>0x00100000</tt>
+</td>
+<td>Display Mixer 0
+</td></tr>
+<tr>
+<td>
+</td>
+<td>Mixer1
+</td>
+<td><tt>0x00200000</tt>
+</td>
+<td>Display Mixer 1
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="CCU">CCU</span></h2>
+<table class="wikitable">
+<tbody><tr>
+<th>Register Name
+</th>
+<th>Offset
+</th>
+<th>Size
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td><tt>DE2_CCU_GATE</tt>
+</td>
+<td><tt>0x00</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Module clock gate register
+</td></tr>
+<tr>
+<td><tt>DE2_CCU_BUS_GATE</tt>
+</td>
+<td><tt>0x04</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Bus clock gate register
+</td></tr>
+<tr>
+<td><tt>DE2_CCU_RST</tt>
+</td>
+<td><tt>0x08</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Bus reset register
+</td></tr>
+<tr>
+<td><tt>DE2_CCU_DIV</tt>
+</td>
+<td><tt>0x0c</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Module clock division register
+</td></tr>
+<tr>
+<td><tt>DE2_CCU_SEL</tt>
+</td>
+<td><tt>0x10</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Mixer/TCON relation register
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="DE2_CCU_GATE">DE2_CCU_GATE</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:4</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>3</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock gate for Transform
+</td></tr>
+<tr>
+<td>2</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock gate for WB
+</td></tr>
+<tr>
+<td>1</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock gate for Mixer 1
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock gate for Mixer 0
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="DE2_CCU_BUS_GATE">DE2_CCU_BUS_GATE</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:4</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>3</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus gate for Transform
+</td></tr>
+<tr>
+<td>2</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus gate for WB
+</td></tr>
+<tr>
+<td>1</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus gate for Mixer 1
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus gate for Mixer 0
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="DE2_CCU_RST">DE2_CCU_RST</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:4</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>3</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus reset for Transform
+</td></tr>
+<tr>
+<td>2</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus reset for WB (and on A83T, H3, R40 and unknown sun8iw{9,10} SoCs, it's also the bus reset for Mixer 1)
+</td></tr>
+<tr>
+<td>1</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus reset for Mixer 1 (on SoCs not mentioned above)
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Bus reset for Mixer 0
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="DE2_CCU_DIV">DE2_CCU_DIV</span></h4>
+<p>The real division value is the value in the register part + 1.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:16</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>12:15</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock division for Transform
+</td></tr>
+<tr>
+<td>8:11</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock division for WB
+</td></tr>
+<tr>
+<td>4:7</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock division for Mixer 1
+</td></tr>
+<tr>
+<td>0:3</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Module clock division for Mixer 0
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="DE2_CCU_SEL">DE2_CCU_SEL</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:1</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Switch Mixer and TCON relation (0 -&gt; Mixer0 - TCON0, Mixer1 - TCON1; 1 -&gt; Mixer0 - TCON1, Mixer1 - TCON0)
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Mixer">Mixer</span></h2>
+<p>Main mixer property is the number of supported video and UI channels. If the SoC has multiple mixers, they usually support different number of channels and first supports more channels than the second. Video channels support YUV planes and UI channels support RGB planes. Another important mixer property is maximum plane size. The exact number of supported channels of either kind and max. plane size can be found in BSP code in de_feat.[c|h] files.<br /><br />
+vi - number of video channels<br />
+ui - number of UI channels
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Subunit
+</th>
+<th>Offset
+</th>
+<th>Size
+</th>
+<th>Count
+</th></tr>
+<tr>
+<td>Global Configuration
+</td>
+<td>0x00000
+</td>
+<td>0x01000
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Blender
+</td>
+<td>0x01000
+</td>
+<td>0x01000
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Video Channels
+</td>
+<td>0x02000
+</td>
+<td>0x01000
+</td>
+<td>vi
+</td></tr>
+<tr>
+<td>UI Channels
+</td>
+<td>(vi + 2) * 0x01000
+</td>
+<td>0x01000
+</td>
+<td>ui
+</td></tr>
+<tr>
+<td>Video Scaler
+</td>
+<td>0x20000
+</td>
+<td>0x20000
+</td>
+<td>vi
+</td></tr>
+<tr>
+<td>UI Scaler
+</td>
+<td>(vi + 1) * 0x20000
+</td>
+<td>0x10000
+</td>
+<td>ui
+</td></tr>
+<tr>
+<td>CSC
+</td>
+<td>0xb0000
+</td>
+<td>0x10000 (?)
+</td>
+<td>1
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Global_Configuration">Global Configuration</span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Register Name
+</th>
+<th>Offset
+</th>
+<th>Size
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td><tt>GLB_CTL_REG</tt>
+</td>
+<td><tt>0x00</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Global control register
+</td></tr>
+<tr>
+<td><tt>GLB_STATUS_REG</tt>
+</td>
+<td><tt>0x04</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Global status register
+</td></tr>
+<tr>
+<td><tt>GLB_DBUFF_REG</tt>
+</td>
+<td><tt>0x08</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Global double buffer register
+</td></tr>
+<tr>
+<td><tt>GLB_SIZE_REG</tt>
+</td>
+<td><tt>0x0c</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td>Global size register
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="GLB_CTL_REG">GLB_CTL_REG</span></h4>
+<p>Note: Only mixer enable and writeback port bits are used in BSP code.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:14</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>12:13</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Writeback port (?)
+</td></tr>
+<tr>
+<td>10:11</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>9</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>flied_rev (?)
+</td></tr>
+<tr>
+<td>8</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>sync_rev (?)
+</td></tr>
+<tr>
+<td>6:7</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>5</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable error IRQ
+</td></tr>
+<tr>
+<td>4</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable finish IRQ
+</td></tr>
+<tr>
+<td>1:3</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable mixer
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="GLB_STATUS_REG">GLB_STATUS_REG</span></h4>
+<p>Note: This register is not used in BSP code.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:9</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>8</td>
+<td>Read (?)</td>
+<td>0</td>
+<td>Even/odd flag (?)
+</td></tr>
+<tr>
+<td>6:7</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>5</td>
+<td>Read (?)</td>
+<td>0</td>
+<td>Error status
+</td></tr>
+<tr>
+<td>4</td>
+<td>Read (?)</td>
+<td>0</td>
+<td>Busy status
+</td></tr>
+<tr>
+<td>2:3</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>1</td>
+<td>Read/Write(?)</td>
+<td>0</td>
+<td>Error IRQ
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write(?)</td>
+<td>0</td>
+<td>Finish IRQ
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="GLB_DBUFF_REG">GLB_DBUFF_REG</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:1</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>0</td>
+<td>Write (?)</td>
+<td>0</td>
+<td>1 -&gt; Apply mixer settings (transfer them to DE2)
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="GLB_SIZE_REG">GLB_SIZE_REG</span></h4>
+<p>Sets mixer output size, should match width and height set in TCON and HDMI (if used).
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:29</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>28:16</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Height - 1
+</td></tr>
+<tr>
+<td>15:13</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>0:12</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Width - 1
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Blender">Blender</span></h3>
+<p>First enabled channel correlates to first enabled pipe and so on. To simplify things, it can be always tought as 1:1 mapping, even if channels are not used in order. Most notably, video channel is often unused, so it is ok to enable first UI channel and second pipe (when SoC have only one video channel, which is very common).
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Register Name
+</th>
+<th>Offset
+</th>
+<th>Size
+</th>
+<th>Count
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td><tt>BLD_PIPE_CTL</tt>
+</td>
+<td><tt>0x00</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Enable "pipes" and their fill colors
+</td></tr>
+<tr>
+<td><tt>BLD_PIPE_ATTR</tt>
+</td>
+<td><tt>0x04</tt>
+</td>
+<td><tt>16 B</tt>
+</td>
+<td><tt>5</tt>
+</td>
+<td>Pipe attributes
+</td></tr>
+<tr>
+<td><tt>BLD_ROUTE_CTL</tt>
+</td>
+<td><tt>0x80</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Z order of pipes
+</td></tr>
+<tr>
+<td><tt>BLD_PREMULTIPLY_CTL</tt>
+</td>
+<td><tt>0x84</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>?
+</td></tr>
+<tr>
+<td><tt>BLD_BKCOLOR</tt>
+</td>
+<td><tt>0x88</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Background color
+</td></tr>
+<tr>
+<td><tt>BLD_OUTPUT_SIZE</tt>
+</td>
+<td><tt>0x8c</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Output size
+</td></tr>
+<tr>
+<td><tt>BLD_MODE</tt>
+</td>
+<td><tt>0x90</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>4</tt>
+</td>
+<td>Blending mode for each channel
+</td></tr>
+<tr>
+<td><tt>BLD_CK_CTL</tt>
+</td>
+<td><tt>0xb0</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Color key control register
+</td></tr>
+<tr>
+<td><tt>BLD_CK_CFG</tt>
+</td>
+<td><tt>0xb4</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>1</tt>
+</td>
+<td>Color key configuration
+</td></tr>
+<tr>
+<td><tt>BLD_CK_MAX</tt>
+</td>
+<td><tt>0xc0</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>4</tt>
+</td>
+<td>Max. color for color keying
+</td></tr>
+<tr>
+<td><tt>BLD_CK_MIN</tt>
+</td>
+<td><tt>0xe0</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>4</tt>
+</td>
+<td>Min. color for color keying
+</td></tr>
+<tr>
+<td><tt>BLD_OUT_CTL</tt>
+</td>
+<td><tt>0xfc</tt>
+</td>
+<td><tt>4 B</tt>
+</td>
+<td><tt>4</tt>
+</td>
+<td>Output control register
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="BLD_PIPE_CTL">BLD_PIPE_CTL</span></h4>
+<p>Note: Enabling pipe's fill color does nothing if pipe is not enabled.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bit</th>
+<th>Read/Write</th>
+<th>Default</th>
+<th>description
+</th></tr>
+<tr>
+<td>31:13</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>12</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable pipe 4
+</td></tr>
+<tr>
+<td>11</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable pipe 3
+</td></tr>
+<tr>
+<td>10</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable pipe 2
+</td></tr>
+<tr>
+<td>9</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable pipe 1
+</td></tr>
+<tr>
+<td>8</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable pipe 0
+</td></tr>
+<tr>
+<td>7:5</td>
+<td>/</td>
+<td>/</td>
+<td>Reserved
+</td></tr>
+<tr>
+<td>4</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable fill color on pipe 4
+</td></tr>
+<tr>
+<td>3</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable fill color on pipe 3
+</td></tr>
+<tr>
+<td>2</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable fill color on pipe 2
+</td></tr>
+<tr>
+<td>1</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable fill color on pipe 1
+</td></tr>
+<tr>
+<td>0</td>
+<td>Read/Write</td>
+<td>0</td>
+<td>Enable fill color on pipe 0
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20230219201640
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.040 seconds
+Real time usage: 0.043 seconds
+Preprocessor visited node count: 57/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:3123-0!canonical and timestamp 20230219201640 and revision id 20910
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="https://linux-sunxi.org/index.php?title=DE2_Register_Guide&amp;oldid=20910">https://linux-sunxi.org/index.php?title=DE2_Register_Guide&amp;oldid=20910</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:H3_Register_guide" title="Category:H3 Register guide">H3 Register guide</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=DE2+Register+Guide" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=DE2+Register+Guide" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="/DE2_Register_Guide" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="/Talk:DE2_Register_Guide" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-view" class="collapsible selected"><a href="/DE2_Register_Guide">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="/index.php?title=DE2_Register_Guide&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="/index.php?title=DE2_Register_Guide&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search linux-sunxi.org" title="Search linux-sunxi.org [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label">
+		<span>Navigation</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-portal"><a href="/sunxi:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" rel="nofollow" title="The place to find out">Help</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/DE2_Register_Guide" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/DE2_Register_Guide" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=DE2_Register_Guide&amp;oldid=20910" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=DE2_Register_Guide&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 23 January 2018, at 09:05.</li>
+		<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a> unless otherwise noted.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="/sunxi:Privacy_policy" title="sunxi:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/sunxi:About" title="sunxi:About">About linux-sunxi.org</a></li>
+		<li id="footer-places-disclaimer"><a href="/sunxi:General_disclaimer" title="sunxi:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="http://creativecommons.org/licenses/by/3.0/"><img src="/resources/assets/licenses/cc-by.png" alt="Creative Commons Attribution" width="88" height="31" loading="lazy"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"0.043","ppvisitednodes":{"value":57,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20230219201640","ttl":86400,"transientcontent":false}}});});</script>
+<!-- No web analytics configured. -->
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":105});});</script></body></html>

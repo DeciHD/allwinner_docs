@@ -16,6 +16,8 @@ https://bbs.aw-ol.com/
 
 https://whycan.com/
 
+https://github.com/tinalinux
+
 https://mangopi.org/
 
 http://www.orangepi.cn/orangepiwiki/index.php/%E4%B8%BB%E9%A1%B5

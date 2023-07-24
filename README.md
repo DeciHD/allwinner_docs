@@ -24,6 +24,8 @@ http://www.orangepi.cn/orangepiwiki/index.php/%E4%B8%BB%E9%A1%B5
 
 https://wiki.pine64.org/wiki/Main_Page
 
+https://wiki.odroid.com/
+
 https://wiki.banana-pi.org/Main_Page
 
 https://open.allwinnertech.com/#/

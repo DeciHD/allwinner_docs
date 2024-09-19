@@ -12,6 +12,8 @@ Feel free to request a file removal if necessary.
 
 # Links
 
+https://www.szlcsc.com/
+
 https://linux-sunxi.org/Main_Page
 
 https://bbs.aw-ol.com/
